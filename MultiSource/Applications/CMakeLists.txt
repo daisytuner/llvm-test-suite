@@ -16,8 +16,7 @@ add_subdirectory(sgefa)
 add_subdirectory(spiff)
 add_subdirectory(viterbi)
 
-# [DEV] Disable ALAC
-# add_subdirectory(ALAC)
+add_subdirectory(ALAC)
 add_subdirectory(hbd)
 add_subdirectory(lambda-0.1.3)
 add_subdirectory(minisat)
@@ -31,8 +30,7 @@ if((TARGET_OS STREQUAL "Linux" OR TARGET_OS STREQUAL "Darwin") AND (NOT ARCH STR
   add_subdirectory(obsequi)
 endif()
 if(NOT TARGET_OS STREQUAL "SunOS")
-  # [DEV] Disable kimwitu++
-  # add_subdirectory(kimwitu++)
+  add_subdirectory(kimwitu++)
 endif()
 if(NOT TARGET_OS STREQUAL "SunOS")
   add_subdirectory(SPASS)
